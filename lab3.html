@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css" type="text/css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Kalkulator COVID-19</title>     
+	</head>
+   <body>
+      <h1>Kalkulator COVID-19</h1>
+      <h2> Podstawowe wiadomości dotyczące możliwości zarażenia się wirusem COVID-19:</h2>
+      <h3> - okres inkubacji trwa 10 dni</h3>
+      <h3> - osoby zarażane są od pierwszego dnia</h3>
+      <h3> - kwarantanna trwa 10 dni</h3> 
+      
+      <h4>Data kontaktu:</h4>
+      <input type="date" id="contactDate">
+
+      <h4>Data wystąpienia pierwszych objawów:</h4>
+      <input type="date" id="symptomsOccuredDate">
+
+      <h4>Data testu:</h4>
+      <input type="date" id="testDate">
+
+      <h4>Aktualna data:</h4>
+      <input type="date" id="actualDate"> 
+
+      <button type="button" id="generateButton"
+      onclick="setData();
+      callFunctions();">Wyświetl raport</button>
+      <script type="text/javascript" src="obliczenia.js"></script>
+   </body>
+</html>
